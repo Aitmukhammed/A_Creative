@@ -1,0 +1,900 @@
+body{
+  margin: 0;
+}
+
+
+/* Delete scroll */
+
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
+
+html {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+
+
+  /* BODY  */
+
+.bg_video{
+  overflow:hidden;
+  width: 100%;
+  height: 1080px;
+  background-image: url('C:/A_Creative/images/bg_video.png');
+}
+
+.open_menu{
+  outline: none; /* Для синий ободки */
+  border: 0;
+  background: transparent;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-align: left;
+  cursor:pointer
+}
+.line2{
+    margin-top: -8px;
+}
+.line3{
+  margin-top: -8px;
+}
+
+.menu{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 450;
+font-size: 22px;
+line-height: 28px;
+text-transform: uppercase;
+/* white */
+margin-top: -45px;
+margin-left: 70px;
+
+color: #FFFFFF;
+}
+
+.about{
+    height: auto;
+    overflow: hidden;
+    width: 800px;
+    margin-left: 700px;
+    margin-top: -70px;
+}
+.pngDream{
+  width: 165px;
+}
+.btndrop{
+  outline: none; 
+  border: 0;
+  background: transparent;
+}
+.table1{
+  margin-top: -110px;
+  margin-left: 300px;
+  border-spacing: 30px;
+}
+
+.languages{
+  width: 50px;
+  height: 50px;
+}
+
+
+ 
+  /*  LANGUAGE  */
+  /* .header_lang{
+    width: 110px;
+  }
+  .header_lang_ru{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+    margin-right: 47px;
+    background-repeat: no-repeat;
+}
+.triangle{
+    margin-bottom: 4px;
+}
+
+
+.header_lang_kz{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 22px;
+    color: #010101;
+    padding: 10px;   
+}
+.header_lang_en{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 22px;
+    color: #010101;
+    padding: 10px;
+} */
+
+
+
+.header_dropdown{
+  display: none;
+  position: absolute;
+  max-width: 160px;
+}
+
+.header_dropdown a {
+  text-decoration: none;
+  display: block;
+}
+
+.header_dropdown a:hover {background-color: #D69E57;}
+
+.header_lang:hover .header_dropdown {display: block;}
+
+
+.triangle{
+    margin-bottom: 4px;
+}
+
+.header_lang_ru{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  color: #FFFFFF;
+  border: 1px solid;
+  padding: 10px 11px 10px 10px;
+  
+  box-sizing: border-box;
+  margin-right: 47px;
+}
+
+.header_lang_ru{
+  text-decoration: none;
+}
+
+.header_lang_kz{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  color: #010101;
+  padding: 10px;   
+}
+.header_lang_en{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  color: #010101;
+  padding: 10px;
+}
+
+.go_down{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.conatiner_circle{
+  text-align: center;
+  margin-top: 40px;
+}
+.more_detailed{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  line-height: 28px;
+
+  margin-top: -120px;
+
+  color: #FFFFFF;
+}
+
+/* MIDDLE */
+.middle{
+  margin-left: -8px;
+ 
+}
+#left{
+  margin-left: -1px;
+}
+.middlePic{
+  height: 493px;
+  margin-left: 7.5px;
+}
+
+
+
+
+  /* BURGER MENU */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  text-align: left;
+  font-size: 36px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('futura-pt-book.ttf');
+  }
+
+.dreamDecorInMenu{
+  margin-left: -1000px;
+  margin-top: -80px;
+}
+
+ul.block_application li{
+  font-family: 'Futura PT Book';
+  color: white;
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 31px;
+  letter-spacing: 0em;
+  display: inline;
+}
+
+.inlineMenu{
+  text-align:top;
+  margin-top: -100px;
+}
+
+.contact{
+  padding-left: 30px;
+}
+
+.application{
+  width: 450px;
+  height: 390px;
+  margin-top: -86px;
+  float: right;
+
+  background:#D69E57;
+  border: 0px #D69E57;;
+}
+
+.message{
+  margin-top: 70px;
+}
+.callInMenu{
+  padding-top: 200px;
+}
+.contactDream{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 450;
+font-size: 30px;
+line-height: 38px;
+text-align: center;
+text-transform: uppercase;
+
+/* white */
+
+color: #FFFFFF;
+}
+.submit_application{
+  font-family: Futura PT;
+font-size: 40px;
+font-weight: 450;
+line-height: 51px;
+letter-spacing: 0em;
+text-align: center;
+
+margin-top: -10px;
+}
+
+
+                         /* INFO CALL */
+
+.content-dropdown {
+  display: none;
+  background-color: #FFFFFF;;
+  overflow: auto;
+  height: 600px;
+
+  margin-left: 320px;
+}
+.showInfoCall { 
+  display: block;
+  top:0px;
+  width: 900px;
+}
+
+
+.contactHeader{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 64px;
+
+margin-top: 20px;
+text-align: center;
+text-transform: uppercase;
+
+color: #010101;
+}
+
+.closeCall{
+  margin-left: 830px;
+}
+.x{
+  margin-top: 40px;
+}
+.call_number{
+  margin-left: 30px;
+  margin-top: -37px;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #010101;
+}
+
+.callBlack{
+  margin-left: -20px;
+}
+
+.adress{
+  margin-left: 30px;
+  margin-top: -30px;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+  
+  
+  /* first color */
+  
+  color: #010101;
+}
+
+.location{
+  margin-left: -20px;
+  margin-top: 25px;
+}
+
+
+.email{
+  margin-left: 180px;
+  margin-top: -30px;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+  
+  
+  /* first color */
+  
+  color: #010101;
+
+}
+
+.message_png{
+  margin-left: 130px;
+  margin-top: 25px;
+}
+
+
+
+
+
+.call_number2{
+  margin-left: 180px;
+  margin-top: -37px;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #010101;
+
+}
+
+.callBlack2{
+  margin-left: 130px;
+}
+
+
+  /* TABLE2 */
+.table2{
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.line{
+  width: 730.04px;
+  height: 0px;
+  left: 95px;
+  margin-top: 60px;
+
+  /* second color */
+
+  border: 1px solid #D9D9D9;
+}
+
+
+.unique_solutions{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 180%;
+/* or 43px */
+
+text-align: center;
+
+/* third color */
+
+color: #848383;
+
+}
+
+.lineBody{
+  margin-top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
+  width: 1420px;
+  height: 0px;
+  left: 45px;
+  top: 60px;
+}
+
+.block_heading{
+  margin-top: 220px;
+  border:1px solid #D69E57;
+}
+
+.header{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 70px;
+  line-height: 90px;
+  /* identical to box height */
+  
+  text-align: center;
+  text-transform: uppercase;
+  
+  /* white */
+  
+  color: #FFFFFF;
+}
+
+.textDownHeader{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 180%;
+/* or 43px */
+
+text-align: center;
+
+/* white */
+
+color: #FFFFFF;
+}
+
+
+.container_aboutComapny{
+  width: 355px;}
+
+.about_company{
+  margin-left: 50px;
+  margin-top: 100px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  line-height: 180%;
+
+  text-transform: uppercase;
+
+  color: #848383;
+}
+
+.right_pic{
+  float: right;
+  margin-top: -670px;
+}
+
+.slideshow-container{
+  margin-left: 280px;
+  margin-top: -580px;
+  width: 700px;
+  height: 570px;
+}
+
+.text_slider{
+  float: left;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  margin-left: 110px;
+
+  color: #010101;
+}
+
+
+/* ---------------  SLIDER  ----------------------  */
+/* Slideshow container */
+.slideshow-container {
+  width: 1000px;
+}
+
+/* Slides */
+
+
+
+.headerInSlider{
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 450;
+font-size: 45px;
+line-height: 64px;
+
+text-transform: uppercase;
+margin-top: -17px;
+text-align: center;
+
+
+color: #010101;
+}
+/* Next & previous buttons */
+.prev {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 12px 15px 12px 15px;
+  margin-left: 1400px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.next{
+  color: white;
+  background-color: black;  
+  border-radius: 50%;
+  padding: 12px 15px 12px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Position the "next button" to the right */
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ОСТАВЬТЕ ЗАЯВКУ */
+
+.dropbtn {
+  background-color: #D69E57;
+  width: 450px;
+  height: 390px;
+  border: 0px #D69E57;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+
+.show {display: block;
+  top:0px;
+  height: 100%;
+  width: 600px;
+  margin-left: -650px;
+}
+
+
+.closeApplication{
+  float: right;
+  margin-right: 40px;
+  margin-top: 25px;
+}
+
+.yourApplication{
+  font-family: 'Futura PT';
+font-style: normal;
+font-size: 36px;
+line-height: 46px;
+text-align: center;
+text-transform: uppercase;
+
+
+padding-top: 50px;
+color: #010101;
+}
+
+.specialistWillContact{
+  font-family: Futura PT;
+font-size: 24px;
+line-height: 43px;
+letter-spacing: 0em;
+text-align: center;
+margin-top: -10px;
+
+}
+
+.name{
+  position: absolute;
+  width: 120.78px;
+  height: 28px;
+  margin-left: 100px;
+  margin-top: -5px;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  /* third color */
+  
+  color: #848383;
+}
+
+.enterName{
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 98px 10px 25px;
+gap: 20px;
+
+position: absolute;
+width: 400px;
+height: 63px;
+left: 0px;
+top: 28px;
+
+/* white */
+background: #FFFFFF;
+/* second color */
+
+border: 1px solid #D9D9D9;
+
+font-family: Futura PT;
+font-size: 24px;
+font-weight: 600;
+line-height: 43px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+input.enterName{
+    background-image: url('C:/Users/Aitmukhammed/Documents/A_Creative/images/people.png');   
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: 16px; /*Позиционируем*/   
+    outline: none; /*убираем стандартную обводку браузера*/   
+    padding-left: 60px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
+}
+input.enterNumber{
+  background-image: url('C:/Users/Aitmukhammed/Documents/A_Creative/images/call.png');   
+  background-repeat: no-repeat; /*Убираем повтор изображения*/   
+  background-position: 16px; /*Позиционируем*/   
+  outline: none; /*убираем стандартную обводку браузера*/   
+  padding-left: 60px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
+}
+.enterNumber{
+  box-sizing: border-box;
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 98px 10px 25px;
+  gap: 20px;
+  
+  position: absolute;
+  width: 400px;
+  height: 63px;
+  
+  /* white */
+  background: #FFFFFF;
+  /* second color */
+  
+  border: 1px solid #D9D9D9;
+  
+  font-family: Futura PT;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+
+  .number{
+    position: absolute;
+    height: 28px;
+    margin-left: 100px;
+    margin-top: 110px;
+
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    /* third color */
+    
+    color: #848383;
+  }
+
+  .comment{
+    position: absolute;
+    width: 135.18px;
+    margin-top: 230px;
+    margin-left: 95px;
+    
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    
+    /* third color */
+    
+    color: #848383;
+  }
+
+  .enterComment{
+    resize: none;
+    margin-left: 5px;
+    width: 395px;
+    border: 1px solid #D9D9D9;
+    height: 150px;
+  }
+
+  .to_send{
+    margin-top: 430px;
+    text-align: center;
+
+    width: 400px;
+    height: 60px;
+
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 180%;
+
+    text-transform: uppercase;
+
+    color: #010101;
+    background-color: #D69E57;
+    border: 0px;
+  }
+
+  .catalog{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 36px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #D69E57;
+
+    margin-top: 150px;
+    margin-left: -850px;
+  }
+
+  .furnitureForHome{
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 31px;
+    /* identical to box height */
+
+    margin-left: 10px;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+  }
+
+  .p{
+    text-align: left;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    /* identical to box height */
+
+    /* white */
+
+    color: #FFFFFF;
+  }
