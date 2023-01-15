@@ -23,6 +23,7 @@ html {
 
 .bg_video{
   overflow:hidden;
+  max-width: 1920px;
   width: 100%;
   height: 1080px;
   background-image: url('C:/A_Creative/images/bg_video.png');
@@ -59,23 +60,24 @@ color: #FFFFFF;
 }
 
 .about{
+  max-width: 1920px;
     height: auto;
     overflow: hidden;
-    width: 800px;
-    margin-left: 700px;
     margin-top: -70px;
 }
 .pngDream{
-  width: 165px;
+  max-width: 1920px;
+  text-align: center;
 }
+
 .btndrop{
   outline: none; 
   border: 0;
   background: transparent;
 }
 .table1{
+  float: right;
   margin-top: -110px;
-  margin-left: 300px;
   border-spacing: 30px;
 }
 
@@ -86,52 +88,15 @@ color: #FFFFFF;
 
 
  
-  /*  LANGUAGE  */
-  /* .header_lang{
-    width: 110px;
-  }
-  .header_lang_ru{
-    font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
-    
-    box-sizing: border-box;
-    margin-right: 47px;
-    background-repeat: no-repeat;
-}
-.triangle{
-    margin-bottom: 4px;
-}
-
-
-.header_lang_kz{
-    font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 22px;
-    color: #010101;
-    padding: 10px;   
-}
-.header_lang_en{
-    font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 22px;
-    color: #010101;
-    padding: 10px;
-} */
-
 
 
 .header_dropdown{
   display: none;
   position: absolute;
   max-width: 160px;
+  margin-top: 10px;
+width: 60px;
+background-color: #FFFFFF;
 }
 
 .header_dropdown a {
@@ -139,7 +104,8 @@ color: #FFFFFF;
   display: block;
 }
 
-.header_dropdown a:hover {background-color: #D69E57;}
+.header_dropdown a:hover {background-color: #D69E57;
+}
 
 .header_lang:hover .header_dropdown {display: block;}
 
@@ -203,23 +169,588 @@ color: #FFFFFF;
   color: #FFFFFF;
 }
 
-/* MIDDLE */
-.middle{
-  margin-left: -8px;
- 
-}
-#left{
-  margin-left: -1px;
-}
-.middlePic{
-  height: 493px;
-  margin-left: 7.5px;
+/*.                                        slider Pictures                                      */
+#wrapper {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
 }
 
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 100%;
+  max-width: 1920px;
+  margin-top: 50px;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+.container_prev_next{
+  max-width: 1920px;
+  border: 1px solid;
+  float: right;
+  margin-right: 200px;
+}
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  font-size: 40px;
+  border: 1px solid black;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  padding: 2px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: -705px;
+}
+#next{
+  font-size: 40px;
+  border: 1px solid black;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  padding: 2px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: -705px;
+  margin-left: 70px;
+}
+
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 400px;
+  height: 600px;
+}
 
 
 
-  /* BURGER MENU */
+/*.                                         bottom middle                                               */
+.deramdecor{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 180%;
+  margin-top: 150px;
+  margin-left: 50px;
+
+
+  color: #848383;
+}
+
+.headerBottomMiddle{
+  text-align: center;
+  margin-top: -75px;
+}
+.stages_of_work{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+
+  text-transform: uppercase;
+
+  color: #010101;
+}
+
+.backgroundMiddle{
+  max-width: 1920px;
+  margin-top: 250px;
+  width: 100%;
+}
+.floRight{
+border-radius: 0px;
+
+  float: right;
+  margin-top: -980px;
+  height: 915px;
+  width: 990px;
+
+
+}
+.floLeft{
+  width: 100%;
+  height: 100%;
+  float: top;
+  margin-top: -250px;
+  
+}
+
+
+
+
+
+/*.                              TOP 3-DIV line            CONTAINER INSTAGRAM                                     .*/
+
+.we_are_in_instagram{
+  text-align: center;
+}
+
+.containerAboutInstagram{
+  background-color: #FBFBFB;
+  max-width: 1920px;
+  width: 100%;
+  height: 1256px;
+}
+#line_block, #line_block1, #line_block2, #line_block3 { 
+  width:110px; 
+  height:50px; 
+  float:left; 
+  margin: 0 15px 15px 0; 
+  text-align:center;
+  padding: 10px;
+  }
+
+#line_block{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 22px;
+  line-height: 180%;
+  margin-top: 150px;
+  text-transform: uppercase;
+
+  color: #848383;
+  float: left;
+}
+#line_block1{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+
+  text-transform: uppercase;
+
+  color: #010101;
+  width:400px; 
+  height:50px; 
+  text-align: center;
+
+  padding-left: 150px;
+}
+#line_block3{
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 64px;
+margin-right: 6 0px;
+
+text-transform: uppercase;
+
+color: #D69E57;
+width:500px; 
+height:50px; 
+}
+
+/* в один ряд  */
+#line_block1, #line_block3{
+  margin: -20px;
+  margin-top: 145px;
+}
+
+/* subscribe */
+#line_block2{
+  width: 148px;
+  height: 40px;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 180%;
+
+  text-transform: uppercase;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 35px;
+  gap: 10px;
+  margin-top: 10px;
+  float: right;
+  margin-top: 160px;
+  color: #FFFFFF;
+}
+#line_block2 a:hover
+{
+   color: black;  
+}
+#line_block2:hover {
+  background-color: #D69E57;
+  }
+#line_block2 a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.instaPicture{
+  margin-top: -500px;
+  margin-left: 130px;
+}
+
+/*.                                         CONTAINER INSTAGRAM                                     .*/
+
+.containerForInstPost{
+  width: 312px;
+  margin-left: 960px;
+  margin-top: -565px;
+}
+.first_post{
+  height: 650px;
+  width: 650px;
+  margin-left: 280px;
+  margin-top: 200px;
+
+}
+.instagram_post{
+  padding-top: 150px;
+}
+
+/*.                                       CONTAINER УЗНАТЬ СТОИМОСТЬ                               */
+.pictureBed{
+  float: right;
+  margin-top: -280px;
+}
+.pictureChair{
+  margin-top: 100px;
+}
+.find_out_the_cost{
+  max-width: 1920px;
+  align-items: center;
+  margin-top: -300px;
+}
+.heade_find_out_the_cost{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 50px;
+  line-height: 64px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #010101;
+}
+.test_in_30sec{
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 180%;
+
+text-align: center;
+
+color: #010101; 
+}
+.button_calculate_the_cost:hover{
+  background-color: #D69E57;
+  border: 0px solid #D69E57;
+}
+.button_calculate_the_cost{
+  width: 350px;
+  height: 60px;
+  
+  border: 1px solid #010101;
+  background-color: white;
+
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 180%;
+
+  text-transform: uppercase;
+
+  color: #010101;
+}
+.center_button{
+  text-align: center;
+}
+
+
+
+
+/*.                                                BOTTOM MENU                                  */
+/* FOOTER__________________________________________ */
+
+.footer{
+  max-width: 1920px;
+  max-height: 816px;
+  height: 760px;
+  background-color: #000000;
+  margin-top: 186px;
+}
+
+.footer_wrapper{
+  position: relative;
+  display: flex;
+}
+
+.footer_logo{
+  width: 191px;
+  height: 115px;
+  margin-top: 105px;
+  margin-left: 60px;
+}
+
+.footer_title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 36px;
+  color: #D69E57;
+  margin-bottom: 63px;
+  margin-left: -87px;
+}
+
+.footer_table_title{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 23px;
+  color: #FFFFFF;
+  margin-right: 115px;
+  margin-left: -85px;
+  margin-bottom: 25px;
+  margin-top: 18px;
+  width: 110%;
+}
+
+.footer_table_items{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-left: -50px;
+  /* margin-bottom: 10px; */
+}
+
+a.visited {
+  color: #FFFFFF;
+}
+.footer_table_wrapper_first a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_table_wrapper_first{
+  margin: 100px 0px 25px 130px;
+}
+
+.footer_table_wrapper_second a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_table_wrapper_second{
+  margin: 192px 0px 0px 0px;
+}
+
+.footer_table_wrapper_third a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_table_wrapper_third{
+  margin: 192px 0px 0px 0px;
+}
+
+.footer_table_wrapper_fourth a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_table_wrapper_fourth{
+  margin: 192px 0px 0px 0px;
+}
+
+.footer_table_wrapper_fifth a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_table_wrapper_fifth{
+  margin: 192px 0px 0px 0px;
+  list-style-type: none;
+}
+
+.footer_nav_icon{
+  margin: 0px 30px 0px -33px;
+}
+
+.footer_company{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 100px 0px 100px 50px;
+}
+.footer_created{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 100px 50px 100px 50px;
+}
+
+.footer_info{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rights_reserved{
+  margin-left: 70px;
+  margin-top: 90px;
+
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+
+
+  /* white */
+
+  color: #FFFFFF;
+}
+
+li{
+  margin-bottom: 16px;
+}
+
+
+
+/*                                         MENU TABLE UL-LI                                       */
+.footer_menu{
+  margin-left: -35px;
+}
+.footer_table_menu{
+  max-width: 1920px;
+}
+
+.footer_wrapper_menu{
+  position: relative;
+  display: flex;
+}
+
+.footer_title_menu{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 36px;
+  color: #D69E57;
+  margin-bottom: 63px;
+  margin-left: -87px;
+}
+
+.footer_table_title_menu{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 31px;
+  
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 18px;
+  width: 110%;
+  text-align: left;
+}
+
+.footer_table_items_menu{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: -30px;
+  text-align: left;
+}
+.footer_table_items_menu{
+  list-style-type: none;
+  }
+
+
+a.visited {
+  color: #FFFFFF;
+}
+.footer_table_wrapper_first_menu a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* .footer_table_wrapper_first_menu{
+  margin: 10px 0px 25px 130px;
+} */
+
+.footer_table_wrapper_second_menu a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* .footer_table_wrapper_second_menu{
+  margin: 192px 0px 0px 0px;
+} */
+
+.footer_table_wrapper_third_menu a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* .footer_table_wrapper_third_menu{
+  margin: 192px 0px 0px 0px;
+} */
+
+.footer_table_wrapper_fourth_menu a:any-link{  
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* .footer_table_wrapper_fourth_menu{
+  margin: 192px 0px 0px 0px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.                                         BURGER MENU                                            */
 
 .sidenav {
   height: 100%;
@@ -340,8 +871,12 @@ margin-top: -10px;
   background-color: #FFFFFF;;
   overflow: auto;
   height: 600px;
-
-  margin-left: 320px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; 
 }
 .showInfoCall { 
   display: block;
@@ -495,18 +1030,18 @@ color: #848383;
 }
 
 .lineBody{
-  margin-top: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  position: absolute;
-  width: 1420px;
+  max-width: 1800px;
+  width: 1800px;
   height: 0px;
   left: 45px;
   top: 60px;
+  margin-top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
 }
 
 .block_heading{
   margin-top: 220px;
-  border:1px solid #D69E57;
 }
 
 .header{
@@ -542,7 +1077,8 @@ color: #FFFFFF;
 
 
 .container_aboutComapny{
-  width: 355px;}
+  width: 355px;
+}
 
 .about_company{
   margin-left: 50px;
@@ -560,53 +1096,51 @@ color: #FFFFFF;
 
 .right_pic{
   float: right;
-  margin-top: -670px;
+  margin-top: -590px;
 }
-
+.textLeft{
+  max-width:1920px;
+  
+}
 .slideshow-container{
-  margin-left: 280px;
+  max-width: 1920px;
   margin-top: -580px;
-  width: 700px;
-  height: 570px;
+  height: 650px;
 }
 
 .text_slider{
-  float: left;
+  max-width: 1920px;
   font-family: 'Futura PT';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 180%;
-  margin-left: 110px;
+  margin-left: 565px;
+
+  color: #010101;
+}
+
+.slideshow-container {
+  max-width: 1920px;
+}
+
+
+.headerInSlider{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 45px;
+  line-height: 64px;
+
+  text-transform: uppercase;
+  margin-top: -17px;
+  text-align: center;
+
 
   color: #010101;
 }
 
 
-/* ---------------  SLIDER  ----------------------  */
-/* Slideshow container */
-.slideshow-container {
-  width: 1000px;
-}
-
-/* Slides */
-
-
-
-.headerInSlider{
-  font-family: 'Futura PT';
-font-style: normal;
-font-weight: 450;
-font-size: 45px;
-line-height: 64px;
-
-text-transform: uppercase;
-margin-top: -17px;
-text-align: center;
-
-
-color: #010101;
-}
 /* Next & previous buttons */
 .prev {
   border: 1px solid black;
@@ -669,11 +1203,17 @@ color: #010101;
   background-color: white;
 }
 
-.show {display: block;
+.show {
+  display: block;
   top:0px;
   height: 100%;
   width: 600px;
-  margin-left: -650px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; 
 }
 
 
@@ -857,6 +1397,7 @@ input.enterNumber{
   }
 
   .catalog{
+    max-width: 1920px;
     font-family: 'Futura PT';
     font-style: normal;
     font-weight: 450;
@@ -866,7 +1407,8 @@ input.enterNumber{
     color: #D69E57;
 
     margin-top: 150px;
-    margin-left: -850px;
+    text-align: left;
+    margin-left: 40px;
   }
 
   .furnitureForHome{
@@ -898,3 +1440,5 @@ input.enterNumber{
 
     color: #FFFFFF;
   }
+
+  
